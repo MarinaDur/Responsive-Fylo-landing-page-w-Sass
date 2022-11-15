@@ -1,0 +1,36 @@
+//button header
+#header__text-form__form-submit-button {
+  @include submitButton($font-size-button-header);
+  @include input(1rem);
+}
+
+//images
+
+img {
+  width: 100%;
+}
+
+//button main
+
+#sign-up__form-submit-button {
+  @include input(1rem);
+  @include submitButton($font-size-button-sign-up);
+  width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 4.5;
+  overflow-wrap: break-word;
+}
+
+.input-container[data-error] #sign-up__form-emailAddress:checked {
+  border: solid 5px red;
+  // color: red;
+}
+
+@media screen and (min-width: 768px) {
+  #sign-up__form-submit-button {
+    margin: 2rem 0;
+    padding: 1.8rem;
+    width: 40%;
+    font-size: $font-size-button-header;
+  }
+}

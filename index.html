@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Fylo lamding page</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="nav__logo-img">
+        <img src="./images/logo.svg" alt="logo-fylo" />
+      </div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#" aria-label="Read more about our project">Features</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Read more about our team members">Team</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="navigation-link"
+              aria-label="Sign in to our services"
+              >Sign in</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
+    <header>
+      <div class="header__image">
+        <img
+          src="./images/illustration-1.svg"
+          alt="illustration-books-header"
+        />
+      </div>
+      <div class="header__text-form">
+        <div class="header__text-form__text">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+        </div>
+        <div class="header__text-form__form">
+          <form action="">
+            <label for="email"></label>
+            <input
+              id="header__text-form__form-emailAddress"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email..."
+            />
+            <input
+              id="header__text-form__form-submit-button"
+              type="submit"
+              value="Get started"
+            />
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- curv effect -->
+    <div class="curve-image"></div>
+    <main>
+      <!-- main section -->
+      <div class="info">
+        <div class="info__image">
+          <img
+            src="./images/illustration-2.svg"
+            alt="illustration-forms-main"
+          />
+        </div>
+        <div class="info__text">
+          <div class="info__text-info">
+            <h2>Stay productive, wherever you are</h2>
+            <p id="info__text-info__first-par">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="info__text-info__sec-par">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+
+            <a
+              href="#"
+              aria-label="Read more about how Fylo works"
+              class="info__text-info-link"
+              id="info__text-info-link"
+              >See how Fylo works
+            </a>
+            <div class="info__text-info__underline"></div>
+          </div>
+          <figure class="info__text-quote">
+            <div class="info__text-quote-container">
+              <blockquote>
+                <div class="info__text-quote-img"></div>
+                <p class="info__text-quote__text">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+              </blockquote>
+              <figcaption>
+                <div class="info__text-quote__image">
+                  <img src="./images/avatar-testimonial.jpg" alt="avatar" />
+                </div>
+                <div class="info__text-quote__name">
+                  <p>Kyle Burton <span> Founder & CEO Huddle</span></p>
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <!-- sign up container -->
+      <div class="sign-up">
+        <div class="sign-up__text">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <div class="sign-up__form">
+          <form action="">
+            <label for="email"></label>
+            <div class="input-container">
+              <input
+                id="sign-up__form-emailAddress"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </div>
+
+            <input
+              id="sign-up__form-submit-button"
+              type="submit"
+              value="Get started For Free"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer__logo-img">
+        <img src="./images/logo.svg" alt="flyo-logo-image" />
+      </div>
+      <div class="footer__content">
+        <div class="footer__content-contact">
+          <div
+            class="footer__content-contact-con footer__content-contact__phone"
+            aria-label="our phone number"
+          >
+            <i class="footer__content-contact-icon fa-solid fa-phone"></i>
+            <p>+1-543-123-4567</p>
+          </div>
+          <div
+            class="footer__content-contact-con footer__content-contact__email"
+            aria-label="our email address"
+          >
+            <i class="footer__content-contact-icon fa-regular fa-envelope"></i>
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+        <div role="navigation" class="footer__content__navigation">
+          <ul id="footer__content__navigation-about-us">
+            <li>
+              <a href="#" aria-label="Read more about our company">about us</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Join our services">join</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Read about what is written about us in the press"
+                >press</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Read out blog">blog</a>
+            </li>
+          </ul>
+        </div>
+        <div role="navigation" class="footer__content__navigation">
+          <ul id="footer__content__navigation-legal">
+            <li>
+              <a href="#" aria-label="contact detailes">contact us</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Read about our terms of use">terms</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Read about our terms of privacy"
+                >privacy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content-social-media">
+          <a href="#" aria-label="Click to visit our facebook page"
+            ><i
+              class="footer__social-copyright-social-icons fa-brands fa-facebook"
+            ></i
+          ></a>
+          <a href="#" aria-label="Click to visit our twitter page"
+            ><i
+              class="footer__social-copyright-social-icons fa-brands fa-twitter"
+            ></i
+          ></a>
+          <a href="#" aria-label="Click to visit our instagram page"
+            ><i
+              class="footer__social-copyright-social-icons fa-brands fa-instagram"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

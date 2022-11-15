@@ -1,0 +1,183 @@
+@media screen and (min-width: 768px) {
+  //body
+  body {
+    text-align: left;
+  }
+
+  //navigation
+  nav {
+    padding: 5rem $padding-base-bs 0;
+  }
+  .navigation {
+    ul {
+      li {
+        margin-left: 5rem;
+      }
+    }
+  }
+
+  .nav__logo-img {
+    img {
+      width: 17rem;
+    }
+  }
+
+  //header
+  header {
+    @include gridLayout;
+  }
+  .header__image {
+    grid-area: b;
+  }
+  .header__text-form {
+    text-align: left;
+    h1 {
+      font-family: $headings-nav-bottons-font;
+    }
+    &:not(.curve-image) {
+      padding: 0 $padding-base-bs;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+    margin-top: 3rem;
+
+    #header__text-form__form-emailAddress {
+      margin: 0;
+      width: 55%;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+    }
+
+    #header__text-form__form-submit-button {
+      margin: 0 0 0 2rem;
+      width: 30%;
+    }
+  }
+
+  //curve-img
+  .curve-image {
+    background: url(../images/bg-curve-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 7.5rem;
+    margin-top: 17rem;
+  }
+
+  .info {
+    @include gridLayout;
+    padding: $padding-base-bs $padding-base-bs 3rem;
+    column-gap: 6rem;
+
+    .info__image {
+      grid-area: b;
+      padding-right: 0;
+      padding-top: 0;
+
+      img {
+        width: 95%;
+      }
+    }
+    h2 {
+      font-size: $font-size-h1;
+      margin-bottom: 5rem;
+    }
+
+    .info__text {
+      .info__text-info {
+        p {
+          padding-left: 0;
+          width: 90%;
+        }
+      }
+      .info__text-info__underline {
+        margin: 0.5rem 0;
+        width: 18rem;
+      }
+
+      a {
+        font-size: $font-size-p;
+      }
+    }
+  }
+
+  //quote
+
+  .info__text-quote {
+    padding: 4rem 4rem 8rem 0;
+    width: 40rem;
+  }
+
+  .info__text-quote-container {
+    padding: 3rem;
+
+    figcaption {
+      margin-top: 1.2rem;
+
+      img {
+        width: 3.5rem;
+      }
+
+      .info__text-quote__name {
+        p {
+          margin-left: 0.8rem;
+
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  //sign up
+
+  .sign-up {
+    padding: 8rem $padding-base-bs;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25rem;
+
+    p {
+      line-height: 1.7;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #sign-up__form-emailAddress {
+      padding: 1.8rem;
+      border: none;
+      width: 100%;
+
+      &::placeholder {
+        color: $Light-Gray;
+      }
+    }
+  }
+
+  //footer
+  footer {
+    padding: 11rem 15rem 11rem $padding-base-bs;
+    .footer__content {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      column-gap: 12rem;
+    }
+  }
+
+  .footer__content__navigation {
+    ul {
+      a {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer__content-social-media {
+    text-align: left;
+  }
+}

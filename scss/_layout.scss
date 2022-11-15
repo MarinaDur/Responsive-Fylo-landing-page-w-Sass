@@ -1,0 +1,338 @@
+//header
+//hader nav
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-base;
+}
+
+.nav__logo-img {
+  img {
+    width: 9rem;
+  }
+}
+
+.navigation {
+  ul {
+    display: flex;
+    li {
+      margin-left: 2rem;
+      list-style: none;
+
+      font-size: $font-size-nav;
+      margin-bottom: 0.6rem;
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: $headings-nav-bottons-font;
+        color: $Very-Dark-Blue;
+      }
+    }
+  }
+}
+
+//header text
+
+header {
+  .header__image {
+    padding: 0 $padding-base;
+    img {
+      margin-top: 9rem;
+    }
+  }
+}
+
+.header__text-form {
+  color: $Very-Dark-Blue;
+  line-height: 1.5;
+
+  h1 {
+    font-size: $font-size-h1;
+    font-weight: 700;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-weight: 500;
+  }
+  &:not(.curve-image) {
+    padding: $padding-base;
+  }
+}
+
+//header form
+#header__text-form__form-emailAddress {
+  @include input(1rem 0 1rem 2rem);
+
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  outline: none;
+
+  &::placeholder {
+    color: $Light-Gray;
+  }
+
+  &:invalid {
+    border: solid 2px rgb(255, 72, 72);
+  }
+}
+
+//wave img
+.curve-image {
+  background: url(../images/bg-curve-mobile.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
+  width: 100%;
+  padding: 0;
+  margin-top: $margin-between_sections;
+}
+
+//main
+.info {
+  background: $Light-Grayish-Blue;
+  padding: 1.2rem 2rem 1.2rem;
+
+  .info__image {
+    padding: $padding-base;
+  }
+  h2 {
+    font-size: $font-size-h2;
+    font-family: $headings-nav-bottons-font;
+    color: $Very-Dark-Blue;
+    margin-top: $margin-between_sections;
+    margin-bottom: 1.5rem;
+  }
+
+  .info__text {
+    .info__text-info {
+      p {
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+
+      .info__text-info__sec-par {
+        margin-bottom: 2rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $Moderate-Cyan;
+      font-size: $font-size-link;
+      font-weight: 500;
+      block-size: min-content;
+      transition: all 0.2s ease-in;
+      &::after {
+        content: "";
+        background: url(../images/icon-arrow.svg) no-repeat;
+        background-size: cover;
+        width: 1.5rem;
+        height: 1.3rem;
+        display: inline-block;
+        // background-size: 1.5rem;
+      }
+
+      &:hover {
+        color: lighten($Moderate-Cyan, $amount: 15%);
+      }
+    }
+
+    .info__text-info__underline {
+      margin: auto;
+      height: 0.1rem;
+      background-color: $Moderate-Cyan;
+      margin-top: 0.5rem;
+      width: 14.4rem;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: lighten($Moderate-Cyan, $amount: 15%);
+      }
+    }
+  }
+}
+
+//quote
+
+.info__text-quote {
+  padding: 4rem 4rem 8rem;
+}
+
+.info__text-quote-container {
+  background-color: #fff;
+  padding: 2rem 1em 2rem 2rem;
+  border-radius: 3.5px;
+  box-shadow: 0 3px 12px 1px $shadow-clr;
+
+  .info__text-quote-img {
+    background: url(../images/icon-quotes.svg) no-repeat;
+    background-position: top 2rem;
+    background-size: 1.5rem;
+    height: 1.5rem;
+  }
+
+  p {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: $font-size-p-quote;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  figcaption {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    img {
+      width: 2.5rem;
+      border-radius: 50%;
+      justify-self: center;
+    }
+
+    .info__text-quote__name {
+      p {
+        margin: 0;
+        font-size: $font-size-name-quote;
+        font-weight: 700;
+        margin-left: 0.5rem;
+
+        span {
+          display: block;
+          font-size: $font-size-title-quote;
+        }
+      }
+    }
+  }
+}
+
+//sign up
+.sign-up {
+  padding: 3.5rem 3.5rem 7.5rem;
+  background: $Desaturated-Blue;
+  color: $Light-Grayish-Blue;
+  h2 {
+    font-family: $headings-nav-bottons-font;
+    font-size: $font-size-h2-sign-up;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  #sign-up__form-emailAddress:invalid {
+    border: solid 3px rgb(255, 72, 72);
+    // content: attr(data-error);
+    // color: red;
+  }
+
+  // .input-container[data-error]:invalid {
+  //   // &::after {
+  //   content: attr(data-error);
+  //   // }
+  // }
+  .input-container[data-error]::after {
+    // &::after {
+    content: attr(data-error);
+    // }
+  }
+
+  #sign-up__form-emailAddress {
+    @include input(0.8rem);
+    margin-bottom: 0.5;
+    width: 85%;
+    border: none;
+
+    outline: none;
+
+    &::placeholder {
+      color: $Light-Gray;
+    }
+  }
+}
+
+//footer
+footer {
+  background: $Very-Dark-Blue;
+  padding: 6rem $padding-base;
+  text-align: left;
+  color: $Light-Grayish-Blue;
+
+  img {
+    width: 18rem;
+    filter: brightness(0) invert(1);
+    margin-bottom: 3.5rem;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+  }
+}
+
+.footer__content-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .footer__content-contact-con {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    p {
+      font-size: $font-size-footer;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .footer__content-contact-icon {
+    font-size: $font-size-icons;
+  }
+}
+
+//navigation
+
+.footer__content__navigation {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    a {
+      color: #fff;
+      font-size: $font-size-footer;
+      text-transform: capitalize;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $Desaturated-Blue;
+      }
+    }
+  }
+}
+
+.footer__content-social-media {
+  text-align: center;
+  a {
+    font-size: $font-size-icons;
+    color: #fff;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $Desaturated-Blue;
+    }
+  }
+}
